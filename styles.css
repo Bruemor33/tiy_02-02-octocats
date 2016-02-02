@@ -1,0 +1,78 @@
+/*****************************************
+Base Styles
+*****************************************/
+
+body {
+  margin: 18px;
+  padding: 1px 1px;
+}
+
+li {
+
+}
+
+img{
+  max-width: 100%;
+}
+
+
+
+/*****************************************
+First Image List Items
+*****************************************/
+
+.octodex {
+  width: 100%;
+}
+
+.octocat {
+  float: left;
+  width: 27%;
+  margin: 15px;
+  list-style: none;
+}
+
+.octocat img {
+  border-style: solid;
+  border-width: thin;
+  border-color: #c1cdcd;
+  margin-left: 0;
+  padding: 10px 5px;
+}
+
+.image-footer {
+  margin: 10px;
+}
+
+.image-number {
+  float: left;
+  padding-right: 10%;
+}
+
+.image-caption span a {
+  float: right;
+  padding-left: 0;
+}
+
+.authors {
+  max-width: 20px;
+  list-style: none;
+  float: right;
+}
+
+.authors a {
+  float: right;
+}
+
+
+
+/*****************************************
+Second Image List Items
+*****************************************/
+
+
+
+
+/*****************************************
+Third Image List Items
+*****************************************/
