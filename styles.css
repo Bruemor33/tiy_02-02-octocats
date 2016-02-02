@@ -28,7 +28,7 @@ Top Main Selections
 /* When adding a kind of underline bellow an image, use the shorthand bellow */
 .octocat {
   float: left;
-  max-width: 29%;
+  width: 380px;
   margin: 12px;
   list-style: none;
   border-bottom: 1px solid #ddd;
