@@ -1,10 +1,10 @@
 /*****************************************
-Base Styles
+Full Selection
 *****************************************/
 
 body {
   margin: 18px;
-  padding: 1px 1px;
+  padding: 0;
 }
 
 li {
@@ -18,61 +18,80 @@ img{
 
 
 /*****************************************
-First Image List Items
+Top Main Selections
 *****************************************/
 
 .octodex {
   width: 100%;
 }
 
+/* When adding a kind of underline bellow an image, use the shorthand bellow */
 .octocat {
   float: left;
-  width: 27%;
-  margin: 15px;
+  max-width: 29%;
+  margin: 12px;
   list-style: none;
+  border-bottom: 1px solid #ddd;
 }
 
-.octocat img {
+/* The bellow syntax is used to select the a element of the .octocat selector. using > selects the attribute nested right bellow the selected. */
+.octocat > a {
+  display: block;
   border-style: solid;
-  border-width: thin;
+  border-width: 1px;
   border-color: #c1cdcd;
-  margin-left: 0;
+  margin-bottom: 10px;
   padding: 10px 5px;
 }
 
+
+
+/*****************************************
+Image Footers
+*****************************************/
+
 .image-footer {
-  margin: 10px;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .image-number {
-  float: left;
-  padding-right: 10%;
+  float:left;
+  margin: 0;
+  padding: 0;
+  color: #838b8b;
 }
 
-.image-caption span a {
+/* using :: allows you to add content infront of or behind the selected item. */
+.image-number::before {
+  content: "#";
+}
+
+.image-caption {
   float: right;
+  margin-left: 15px;
+  margin-right: 0;
   padding-left: 0;
 }
 
+.image-caption span {
+  color: #838b8b;
+}
+
+.image-caption a {
+  text-decoration: none;
+  color: #000;
+}
+
 .authors {
-  max-width: 20px;
+  padding-left: 5px;
+  margin-left: 0px;
   list-style: none;
   float: right;
 }
 
-.authors a {
-  float: right;
+.authors img {
+  position: relative;
+  width: 25px;
 }
-
-
-
-/*****************************************
-Second Image List Items
-*****************************************/
-
-
-
-
-/*****************************************
-Third Image List Items
-*****************************************/
