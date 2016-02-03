@@ -7,12 +7,20 @@ body {
   padding: 0;
 }
 
-li {
-
+/* This was a css reset in order to get rid of some padding, or any other styler, so we can more acuratly render our site. */
+ul {
+  padding: 0;
 }
 
 img{
   max-width: 100%;
+}
+
+/* type box-sizing, hit tab, and get browser wide options */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
@@ -35,7 +43,10 @@ Top Main Selections
 }
 
 
-/* The bellow syntax is used to select the a element of the .octocat selector. using > selects the attribute nested right bellow the selected. */
+/* The bellow syntax is used to select the a element of the .octocat selector. using > selects the attribute nested right bellow the selected. > is considered a direct selector. */
+
+/* I added padding here in order to seperate the child from the parent. Adding some space between the img and it's border. Following the css box guide in chrome inspect is a great way to remember the order. */
+
 .octocat > a {
   display: block;
   border-style: solid;
@@ -47,6 +58,12 @@ Top Main Selections
 }
 
 
+
+/*****************************************
+Image Footers
+*****************************************/
+
+
 .image-footer::before {
   width: 5px;
   height: 5px;
@@ -54,11 +71,6 @@ Top Main Selections
   border-width: 100px 100px 0 100px;
   border-color: #bec5cc transparent transparent transparent;
 }
-
-
-/*****************************************
-Image Footers
-*****************************************/
 
 .image-footer {
   font-family: arial;
@@ -78,15 +90,6 @@ Image Footers
   content: "#";
 }
 
-.image-caption > span {
-  display: inline-block;
-  margin-top: 4.2px;
-}
-
-.image-caption > a {
-  display: inline-block;
-  margin-top: 4.2px;
-}
 
 .image-caption {
   float: right;
@@ -99,9 +102,19 @@ Image Footers
   color: #838b8b;
 }
 
+.image-caption > span {
+  display: inline-block;
+  margin-top: 4.2px;
+}
+
 .image-caption a {
   text-decoration: none;
   color: #000;
+}
+
+.image-caption > a {
+  display: inline-block;
+  margin-top: 4.2px;
 }
 
 .authors {
